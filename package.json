@@ -1,5 +1,5 @@
 {
-  "name": "burger",
+  "name": "burgers_db",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,6 +19,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
+    "materialize-css": "^1.0.0-rc.2",
     "mysql": "^2.18.1"
   }
 }
