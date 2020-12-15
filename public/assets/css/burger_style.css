@@ -1,0 +1,29 @@
+body {
+    background-color: #FFF9EA ;
+}
+
+h1 {
+    font-family: 'Chewy', cursive;
+    text-align: center;
+    color: #D00202;
+    font-size: 36pt;
+}
+
+.titles {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16pt;
+    text-align: center;
+}
+
+ul {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#burger_image{
+    align-items: center;
+}
+
+#adding {
+    text-align: center;
+}
+
