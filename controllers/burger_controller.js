@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-
 const burger = require("../models/burger.js");
 
 router.get("/", (req, res) => {
@@ -15,7 +14,7 @@ router.get("/", (req, res) => {
 
 router.post("/api/burgers", (req, res) => {
   burger.create(["burger_name", "devoured"], 
-  [req.body.burger_name, req.body.devoured], 
+  [req.body.burger_name, false], 
   function (result) {
     res.json({ id: result.insertID });
   });
@@ -28,7 +27,7 @@ router.put("api/burgers/:id", (req, res) => {
 
   burger.update(
     {
-      devoured: req.body.devoured,
+      devoured: true,
     },
     condition,
     function (result) {
