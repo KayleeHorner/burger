@@ -1,7 +1,7 @@
 const connection = require("../config/connection.js");
 
 function questionMarks(num) {
-  const array = [];
+  var array = [];
 
   for (var i = 0; i < num; i++) {
     array.push("?");
