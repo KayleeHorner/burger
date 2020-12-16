@@ -1,13 +1,14 @@
 $(function() {
-    $(".chgDevoured").on("click", function(event) {
+    $(".chgStatus").on("click", function(event) {
       var id = $(this).data("id");
-  
+
+      //Something at this line isn't working for the devour button
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
-        data: devouredBurger
+        devoured: true,
       }).then(
         function() {
-          console.log("changed status to", newBurger);
+          console.log("changed status", id);
           location.reload();
         }
       );
@@ -17,8 +18,8 @@ $(function() {
       event.preventDefault();
   
       var newBurger = {
-        name: $("#new_burger").val().trim(),
-        devoured: 0,
+        burger_name: $("#new_burger").val().trim(),
+        devoured: false,
       };
 
       $.ajax("/api/burgers", {
