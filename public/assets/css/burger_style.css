@@ -27,3 +27,8 @@ ul {
     text-align: center;
 }
 
+#icon {
+    display: block;
+    background-image: url("../img/burger.png");
+    width: 180px;
+}
