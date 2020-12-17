@@ -20,6 +20,8 @@ Run Command: npm i
 ## Usage
 Open link and click on a burger to devour or add your own burger to the table
 
+Heroku Link: https://tranquil-river-97452.herokuapp.com/ (I followed the given instructions and still cannot get JawsDB to load correctly. Hopefully I can get it fixed before it's graded)
+
 ## License
 This project is licensed under the Unlicensed license.
 
