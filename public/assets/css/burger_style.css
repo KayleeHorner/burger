@@ -29,6 +29,6 @@ ul {
 
 #icon {
     display: block;
-    background-image: url("../img/burger.png");
+    background-image: url("./public/assets/img/burger.png");
     width: 180px;
 }
