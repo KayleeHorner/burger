@@ -2,10 +2,8 @@ $(function() {
     $(".chgStatus").on("click", function(event) {
       var id = $(this).data("id");
 
-      //Something at this line isn't working for the devour button
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
-        devoured: true,
       }).then(
         function() {
           console.log("changed status", id);
